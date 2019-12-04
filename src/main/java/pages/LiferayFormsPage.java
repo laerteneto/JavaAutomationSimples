@@ -22,7 +22,9 @@ public class LiferayFormsPage {
 
 	
 	/**
-	 * Valida o texto party rock. 
+	 * 
+	 * Valida o texto party rock.
+	 *  
 	 */
 	public void validarPartyRockTexto() {
 		Assert.assertEquals("Let's party rock.", driver.findElement(By.xpath(FormsMap.textoPartyRock())).getText());
@@ -30,10 +32,12 @@ public class LiferayFormsPage {
 	
 	
 	/**
-	 * Preecher formulário
+	 * Preeche formulário Liferay Forms
+	 * 
 	 * @param nome Texto contendo o nome
 	 * @param data Data de nascimento
 	 * @param texto Texto que deseja se digitar no campo Porque você ingressou...
+	 * 
 	 */
 	public void preencherFormulario(String nome, String data, String texto) {
 		driver.findElement(By.xpath(FormsMap.campoInput("Qual é seu nome?"))).sendKeys(nome);
@@ -48,7 +52,9 @@ public class LiferayFormsPage {
 	}
 	
 	/**
-	 * Valida a mensagem de sucesso após uma cadastro no formulário 
+	 * 
+	 * Valida a mensagem de sucesso após uma cadastro no formulário
+	 *  
 	 */
 	public void validarMensagemSucesso() {
 		Assert.assertEquals("Informações enviadas", driver.findElement(By.xpath(FormsMap.mensagemCadastroSucesso())).getText());

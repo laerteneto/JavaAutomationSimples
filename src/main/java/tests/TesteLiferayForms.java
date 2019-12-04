@@ -58,6 +58,9 @@ public class TesteLiferayForms {
 	
 	
 	
+	
+	
+	
 	@Test
 	public void deveIntegarirComRadioButton(){
 		liferayFormsPage.clicarRadio("elementosForm:sexo:0");
