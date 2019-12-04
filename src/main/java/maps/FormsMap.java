@@ -23,6 +23,8 @@ public class FormsMap {
 		return "//h4[contains(text(), 'party rock')]";
 	}
 	
-	
+	public static String mensagemCampoObrigatorio(String labelCampo) {
+		return "//div[@class='form-feedback-item help-block']/..//label[contains(text(),'"+ labelCampo +"')]";
+	}
 	
 }
